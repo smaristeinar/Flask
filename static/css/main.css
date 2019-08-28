@@ -1,0 +1,12 @@
+body{
+margin: 0;
+padding: 0;
+}
+
+
+.text-box{
+  background-color: orange;
+  font-size: 30px;
+  text-align: center;
+  color: purple;
+}
