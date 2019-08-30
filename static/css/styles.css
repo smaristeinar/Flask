@@ -3,5 +3,27 @@
   color: purple;
   font-family: arial;
   text-align: center;
-  
+  padding: 30px;
+}
+
+.links{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+
+.links > li{
+  background-color: black;
+  border: 3px solid purple;
+  display: block;
+  font-size: 30px;
+  margin: 20px;
+  padding: 10px;
+}
+
+
+a{
+  text-decoration: none;
+  color: purple;
+  font-family: fantasy;
 }
