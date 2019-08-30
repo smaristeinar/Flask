@@ -1,15 +1,13 @@
-from flask import Flask
-from datetime import datetime
+from flask import Flask, render_template
+import os
+
 app = Flask(__name__)
 
-@app.route('/')
-def homepage():
-    return """
-    <h1>Hello heroku</h1>
-    <p>It is currently {time}.</p>
+@app.route("/")
+def index():
+    return render_template("index.html")
 
-    <img src="http://loremflickr.com/600/400">
-    """
 
-if __name__ == '__main__':
-    app.run(debug=True, use_reloader=True)
+if __name__ == "__main__":
+    app.run()
+    #app.run(debug=True, use_reloader = True)
