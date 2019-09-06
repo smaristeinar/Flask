@@ -27,3 +27,39 @@ a{
   color: purple;
   font-family: fantasy;
 }
+
+
+.fréttir {
+  display:grid;
+  grid-template-areas:"dalkur1 dalkur2"
+  "footer footer";
+  margin: 0;
+  padding-left: auto;
+  padding-right: auto;
+  justify-content: center;
+}
+
+
+.dalkur1{
+  margin: 10px;
+  grid-area: dalkur1;
+}
+
+.dalkur2{
+margin: 10px;
+text-align:left;
+padding-top: 15%;
+grid-area: dalkur2;
+}
+
+.footer1{
+  align-self: center;
+  grid-area: footer;
+
+}
+
+
+.listi_myndir{
+  list-style: none;
+  font-size: 60px;
+}
