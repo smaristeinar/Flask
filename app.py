@@ -33,11 +33,7 @@ def a():
 
     return render_template("a.html", sss=smari, ssskt=smarikt, ein=einar, einkt=einarkt)
 
-@app.route("/sida")
-def villa():
-    return"""
-    <h1>þessi síða fannst ekki</h1>
-    """
+
 
 @app.route("/sida/<kennitala>")
 def sida(kennitala):
@@ -84,9 +80,6 @@ news = {
         },
 }
 
-@app.route("/bio")
-def b():
-    return """<h1>tóm síða</h1>"""
 
 @app.route("/bio/b1")
 def b1():
@@ -103,7 +96,10 @@ def b_page(news_number):
         return "villa"
 
 
-
+@app.errorhandler(404)
+def page_not_found():
+    # note that we set the 404 status explicitly
+    return "síða fanst ekki 404"
 
 
 
